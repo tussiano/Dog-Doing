@@ -1,52 +1,243 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./styles/style.css">
-      <link rel="shortcut icon" href="./assets/images/favicon.png" />
-      
-      <title>DogDoing</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-      <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- estilos -->
+    <link href="./styles/home.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <title>DogDoing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
-      rel="stylesheet"/>
-    </head>
-    <body>
-        <section id="page">
-            <nav class="navbar" id="nav">
-                <ul class="nav-links">
-                    <li class="nav-item"><a href="./index.html">Menú</a></li>
-                    <li class="nav-item"><a href="./nosotros.html">Nosotros</a></li>
-                    
-                    <li class="nav-item"><a href="./contacto.html">Contáctanos</a></li>
-                    <li class="nav-item"><a href="./recomendaciones.html">Recomendaciones</a></li>
-                    <li class="nav-item"><a href="./tienda.html">Productos</a></li>
-                </ul>
-            </nav>
-            <main class="background-hero" id="hero"></main>
-                    <div class="hero-text">
-                        <h1>Porque ellos...</h1>
-                        <h2>Merecen lo mejor</h2>
-                    </div>
-                    <div class="hero-button">
-                    <a href="./productos.html" class="button">Quiero comprar!</a>
-                    <!-- <button class="btn">Quiero comprar!</button> -->
-                    </div>
-                </div>
-            </main>
-            <!-- <div class="container-articulos" id="container">
-                <article class="articulo"></article>
-                <article class="articulo"></article>
-            </div> -->
-            <footer class="pie" id="pie">
-                <p>Autor: Boucher, Federico<br>
-                    <a href="mailto:boucherfederico@gmail.com">boucherfederico@gmail.com</a>
-                </p>
-            </footer>
-        </section>
-    </body>
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
+          format("woff2");
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DogDoing</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <!-- Hero -->
+    <section class="background-hero" id="hero">
+      <div class="hero-text">
+        <h1 class="sub-1">Porque ellos...</h1>
+        <h1 class="sub-2">Merecen lo mejor</h1>
+      </div>
+      <div class="hero-button">
+        <a href="./tienda.html" class="button">Quiero comprar!</a>
+        <!-- <button class="btn">Quiero comprar!</button> -->
+      </div>
+    </section>
+
+    <main role="main">
+      <div class="container marketing">
+        <hr class="caracteristica-div" />
+
+        <div class="row caracteristica">
+          <div class="col-md-7">
+            <h2 class="caracteristica-head">
+              We aim to make them
+              <p>
+                <span class="text-muted">the happiest they can be.</span>
+              </p>
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              mollitia, suscipit similique iusto aspernatur nihil amet aliquid
+              ipsam nulla explicabo? Necessitatibus cupiditate fuga quasi
+              blanditiis quos quam dolorum, unde sit.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="caracteristica-image img-fluid mx-auto"
+              data-src="holder.js/500x500/auto"
+              alt="500x500"
+              style="width: 500px; height: 500px"
+              src="assets/images/training-dogs.jpg"
+              data-holder-rendered="true"
+            />
+          </div>
+        </div>
+
+        <hr class="caracteristica-div" />
+
+        <div class="row caracteristica">
+          <div class="col-md-7 order-md-2">
+            <h2 class="caracteristica-head">
+              We give solutions
+              <p>
+                <span class="text-muted">
+                  for all of their most important needs.
+                </span>
+              </p>
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptas, repudiandae doloribus accusantium, nemo facilis iure
+              laboriosam, harum incidunt fugit ex sit! Fugiat, sunt modi minus
+              quae aut id placeat eum.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img
+              class="caracteristica-image img-fluid mx-auto"
+              data-src="holder.js/500x500/auto"
+              alt="500x500"
+              style="width: 500px; height: 500px"
+              src="assets/images/dog-with-toy.jpg"
+              data-holder-rendered="true"
+            />
+          </div>
+        </div>
+
+        <hr class="caracteristica-div" />
+
+        <div class="row caracteristica">
+          <div class="col-md-7">
+            <h2 class="caracteristica-head">
+              We know them well,
+              <p>
+                <span class="text-muted"
+                  >as we have years of caring for them.</span
+                >
+              </p>
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in
+              mollitia earum perferendis sequi ea nobis placeat nesciunt,
+              consectetur, sint est tenetur? Ipsa ipsum laudantium, ea autem
+              perferendis aperiam placeat?
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="caracteristica-image img-fluid mx-auto"
+              data-src="holder.js/500x500/auto"
+              alt="500x500"
+              style="width: 500px; height: 500px"
+              src="./assets/images/Dog-Flying-Disc.jpg"
+              data-holder-rendered="true"
+            />
+          </div>
+        </div>
+
+        <hr class="caracteristica-div" />
+      </div>
+
+      <!-- TO DO:::  pie de pagina  -->
+      <footer class="pie">
+        <p>
+          Author: Boucher, Federico<br />
+          <a href="mailto:boucherfederico@gmail.com"
+            >boucherfederico@gmail.com</a
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>

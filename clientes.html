@@ -7,16 +7,39 @@
     <title>LovePetz</title>
   </head>
   <body class="body">
-    <nav class="navbar" id="nav">
-      <ul class="nav-links">
-        <li class="nav-item"><a href="./index.html">Menú</a></li>
-        <li class="nav-item"><a href="./nosotros.html">Nosotros</a></li>
-        <li class="nav-item"><a href="./productos.html">Productos</a></li>
-        <li class="nav-item"><a href="./contacto.html">Contáctanos</a></li>
-        <!-- <li class="nav-item">
-          <a href="./recomendaciones.html">Recomendaciones</a>
-        </li> -->
-      </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DogDoing</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav animate-character">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <h1>Nuestros clientes:</h1>
     <p>
@@ -35,11 +58,147 @@
       width="1000"
       height="600"
     />
-    <footer class="pie">
-      <p>
-        Autor: Boucher, Federico<br />
-        <a href="mailto:boucherfederico@gmail.com">boucherfederico@gmail.com</a>
-      </p>
+    <footer class="text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--columna-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div
+              class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+              style="width: 150px; height: 150px"
+            >
+              <img
+                src="./assets/images/logo-modified.png"
+                height="150"
+                alt="logo"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="text-center">Covering all your pet needs</p>
+
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Animals</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Pets for adoption</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>How to adopt?</a
+                >
+              </li>
+
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Our shop</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Help with behaviour</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Volunteer activities</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">US</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>General information</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Services</a
+                >
+              </li>
+              <!-- <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Contact</a
+                >
+              </li> -->
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-map-marker-alt pe-2"></i>742 Av. Siempreviva
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-phone pe-2"></i>
+                  <a href="tel:+ 54 351 772-3334">+ 54 351 772-3334</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-envelope pe-2 mb-0"></i>
+                  <a href="mailto:contact@dogdoing.com">contact@dogdoing.com</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 footer-inferior">
+        © 2022 Copyright:
+        <a class="text-white" href="https://dogdoing.com/">DogDoing.com</a>
+      </div>
+      <!-- Copyright -->
     </footer>
   </body>
 </html>

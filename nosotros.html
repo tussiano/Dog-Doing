@@ -3,26 +3,120 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./styles/style.css">
+      <link rel="stylesheet" href="./styles/home.css">
       <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
-      rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- estilos -->
+    <link href="./styles/home.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <title>DogDoing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
+          format("woff2");
+      }
+    </style>
     </head>
     <title>DogDoing</title>
   </head>
   <body>
-    <nav class="navbar" id="nav">
-      <ul class="nav-links">
-          <li class="nav-item"><a href="./index.html">Menú</a></li>
-          <li class="nav-item"><a href="./nosotros.html">Nosotros</a></li>
-          
-          <li class="nav-item"><a href="./contacto.html">Contáctanos</a></li>
-          <!-- <li class="nav-item"><a href="./recomendaciones.html">Recomendaciones</a></li> -->
-          <li class="nav-item"><a href="./tienda.html">Productos</a></li>
-      </ul>
-  </nav>
-      <div class="about-section">
-        <h1 style="margin-bottom: 20px;">Sobre nosotros:</h1>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DogDoing</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav animate-character">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="about-section text-lg-center">
+        <h1 style="margin-bottom: 20px;" class="text-lg-center">About us:</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> 
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
@@ -31,11 +125,164 @@
         <p>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
-        <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p></p>
+        <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> 
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
+        <p>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
+        <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
       </div>
-        <footer class="pie">
-        <p>Autor: Boucher, Federico<br>
-        <a href="mailto:boucherfederico@gmail.com">boucherfederico@gmail.com</a></p>
-      </footer>
+        <!-- TO DO:::  pie de pagina  -->
+        <footer class="text-center text-lg-start text-white">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+              <!--columna-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div
+                  class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                  style="width: 150px; height: 150px"
+                >
+                  <img
+                    src="./assets/images/logo-modified.png"
+                    height="150"
+                    alt="logo"
+                    loading="lazy"
+                  />
+                </div>
+    
+                <p class="text-center">
+                  Covering all your pet needs
+                </p>
+    
+                <ul class="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a class="text-white px-2" href="#!">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white px-2" href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white ps-2" href="#!">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Animals</h5>
+    
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>Pets for adoption</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>How to adopt?</a
+                    >
+                  </li>
+                  
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>Our shop</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>Help with behaviour</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>Volunteer activities</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">US</h5>
+    
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>General information</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>About</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>Services</a
+                    >
+                  </li>
+                  <!-- <li class="mb-2">
+                    <a href="#!" class="text-white"
+                      ><i class="fas fa-paw pe-3"></i>Contact</a
+                    >
+                  </li> -->
+                </ul>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Contact</h5>
+    
+                <ul class="list-unstyled">
+                  <li>
+                    <p>
+                      <i class="fas fa-map-marker-alt pe-2"></i>742 Av. Siempreviva
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-phone pe-2"></i>
+                      <a href="tel:+ 54 351 772-3334">+ 54 351 772-3334</a>
+                      
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-envelope pe-2 mb-0"></i>
+                      <a href="mailto:contact@dogdoing.com">contact@dogdoing.com</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+    
+          <!-- Copyright -->
+          <div class="text-center p-3 footer-inferior">
+            © 2022 Copyright:
+            <a class="text-white" href="https://dogdoing.com/"
+              >DogDoing.com</a
+            >
+          </div>
+          <!-- Copyright -->
+        </footer>
   </body>
 </html>

@@ -125,9 +125,13 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    overflow-x: hidden
+    overflow-x: hidden;
+    background-color: #ffd8e1;
 }
 
+section{
+    background-color: #ffd8e1;
+}
 main {
     flex: 1 0 auto;
     z-index: 2;

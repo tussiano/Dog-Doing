@@ -1,324 +1,331 @@
-nav {
-  background-color: #e12323;
-}
+@import './footer.scss';
+@import './header.scss';
 
-body {
-  color: #ffd8e1;
-}
-
-.background-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://c1381994.ferozo.com/assets/images/dogs-need-the-best.jpg);
-  height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: Pacifico,serif;
-  font-size: 37px;
-  text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-}
-
-.sub-2 {
-  text-decoration: underline;
-}
-
-.hero-button {
-  text-align: center;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: Nunito,sans-serif;
-  font-size: 37px;
-  text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-  transition: all .5s;
-
-  &:hover {
-    font-size: 45px;
-    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-  }
-}
-
-a {
-  &:link {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  &:visited {
-    color: #fff;
-  }
-
-  &:hover {
-    color: #ccc;
-    text-decoration: none;
-  }
-
-  &:active {
-    color: #fff;
-  }
-}
-
-.caracteristica-div {
-  margin: 5rem 0;
-}
-
-.caracteristica-head {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-@media (min-width: 40em) {
-  .caracteristica-head {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .caracteristica-head {
-    margin-top: 7rem;
-  }
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
-main {
-  flex: 1 0 auto;
-  z-index: 2;
-  overflow-x: hidden;
-  background-color: #ffd8e1;
-}
-
-footer {
-  z-index: 1;
-  background-color: #e12323;
-}
-
-.footer-inferior {
-  background: #ffd8e1;
-}
-
-.pacifico {
-  font-family: Pacifico,cursive;
-}
-
-.center-background {
-  background-position: center center;
-  background-size: cover;
-}
-
-.btn {
-  font-family: KONGText,sans-serif;
-  font-weight: 400;
-
-  &.white {
-    background-color: #fff !important;
-    color: rgba(0, 0, 0, 0.87);
-
-    &:hover {
-      background-color: #eee !important;
-    }
-  }
-
-  &:disabled {
-    background-color: #ddd !important;
-    color: #fff !important;
-  }
-}
-
-.pie {
-  text-align: center;
-  padding: 3px;
-  background-color: #333;
-  color: #fff;
-  display: block;
-  text-decoration: none;
-  padding: .5em 1em;
-  font-family: Verdana,Geneva,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  a {
-    color: #add8e6;
-  }
-}
-
-section {
-  padding: 2rem 0;
-
-  &.alt {
-    background-color: #ed174c;
-    color: #fff;
-  }
-}
-
-.slide-in-left {
-  position: relative;
-  animation: slide-in-left 5s ease-out;
-}
+$color_1: #ffd8e1;
+$color_2: #fff;
+$color_3: #ccc;
+$color_4: #000;
+$color_5: inherit;
+$color_6: black;
+$color_7: rgba(0, 0, 0, .87);
+$color_8: #add8e6;
+$font-family_1: Pacifico, serif;
+$font-family_2: Nunito, sans-serif;
+$font-family_3: Pacifico, cursive;
+$font-family_5: Verdana, Geneva, sans-serif;
+$font-family_6: Poppins;
+$background-color_1: #e12323;
+$background-color_2: currentColor;
+$background-color_3: #ffd8e1;
+$background-color_4: #fff;
+$background-color_5: #eee;
+$background-color_6: #ddd;
+$background-color_7: #333;
+$background-color_8: #ed174c;
+$background-color_9: #dfe6e9;
+$background-color_10: #f9ca24;
 
 @keyframes slide-in-left {
-  0% {
-    opacity: 0;
-    left: -700px;
-  }
-
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+	0% {
+		opacity: 0;
+		left: -700px;
+	}
+	100% {
+		opacity: 1;
+		left: 0;
+	}
 }
-
-.slide-in-right {
-  position: relative;
-  animation: slide-in-right 5s ease-out;
-}
-
 @keyframes slide-in-right {
-  0% {
-    opacity: 0;
-    right: -700px;
-  }
-
-  100% {
-    opacity: 1;
-    right: 0;
-  }
+	0% {
+		opacity: 0;
+		right: -700px;
+	}
+	100% {
+		opacity: 1;
+		right: 0;
+	}
 }
-
-.animate-char {
-  -webkit-animation: fadein 2s;
-  animation: fadein 3s;
-}
-
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
-
 @-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
-
-.lista-productos {
-  background-color: #dfe6e9;
-  padding: 3em;
-
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 1em;
-    box-shadow: 0 10px 5px #b2bec3;
-    text-align: center;
-    font-family: Poppins;
-  }
-}
-
-.card {
-  .title {
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-
-  .text {
-    text-align: left;
-    margin-left: 2em;
-    margin-bottom: .5em;
-    font-size: 12px;
-  }
-}
-
-.btn-comprar {
-  background-color: #f9ca24;
-  border: none;
-  padding: 1em;
-  border-radius: 5px;
-  font-weight: 700;
-  width: 100%;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.card {
-  img {
-    transition: .5s ease;
-  }
-
-  &:hover {
-    img {
-      transform: scale(1.1);
-      transition: 1s ease;
-    }
-
-    .detalles {
-      opacity: 1;
-      visibility: visible;
-      top: 0;
-      transition: 2s ease;
-    }
-  }
-}
-
-.text, .title {
-  opacity: 1;
-  transition: .5s ease;
-}
-
-.card:hover {
-  .text, .title {
-    opacity: 0;
-    transition: 1 ease;
-  }
-}
-
-.new {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 5;
-  animation: pulse 2s ease-in infinite;
-}
-
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: rotate(45deg) scale(1.3);
-  }
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: rotate(45deg) scale(1.3);
+	}
+}
+nav {
+	background-color: $background-color_1;
+}
+body {
+	color: $color_1;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	overflow-x: hidden;
+	background-color: $background-color_3;
+}
+.background-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(http://c1381994.ferozo.com/assets/images/dogs-need-the-best.jpg);
+	height: 800px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $color_2;
+	font-family: $font-family_1;
+	font-size: 37px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.sub-2 {
+	text-decoration: underline;
+}
+.hero-button {
+	text-align: center;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $color_2;
+	font-family: $font-family_2;
+	font-size: 37px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	transition: all .5s;
+	&:hover {
+		font-size: 45px;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+}
+a {
+	&:link {
+		color: $color_2;
+		text-decoration: none;
+	}
+	&:visited {
+		color: $color_2;
+	}
+	&:hover {
+		color: $color_3;
+		text-decoration: none;
+	}
+	&:active {
+		color: $color_2;
+	}
+}
+.caracteristica-div {
+	margin: 5rem 0;
+}
+.caracteristica-head {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -.05rem;
+	color: $color_4;
+}
+hr {
+	&:not([size]) {
+		height: 1px;
+	}
+	margin: 1rem 0;
+	color: $color_5;
+	background-color: $background-color_2;
+	border: 0;
+	opacity: .25;
+	display: block;
+	unicode-bidi: isolate;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	overflow: hidden;
+	border-style: inset;
+	border-width: 1px;
+}
+* {
+	box-sizing: border-box;
+}
+&::after {
+	box-sizing: border-box;
+}
+&::before {
+	box-sizing: border-box;
+}
+.lead {
+	color: $color_6;
+}
+section {
+	background-color: $background-color_3;
+	padding: 2rem 0;
+}
+main {
+	flex: 1 0 auto;
+	z-index: 2;
+	overflow-x: hidden;
+	background-color: $background-color_3;
+}
+footer {
+	z-index: 1;
+	background-color: $background-color_1;
+}
+.footer-inferior {
+	background: #ffd8e1;
+}
+.pacifico {
+	font-family: $font-family_3;
+}
+.center-background {
+	background-position: center center;
+	background-size: cover;
+}
+.btn {
+	font-family: $font-family_4;
+	font-weight: 400;
+	&:disabled {
+		background-color: $background-color_6 !important;
+		color: $color_2 !important;
+	}
+}
+.btn.white {
+	background-color: $background-color_4 !important;
+	color: $color_7;
+	&:hover {
+		background-color: $background-color_5 !important;
+	}
+}
+.pie {
+	text-align: center;
+	padding: 3px;
+	background-color: $background-color_7;
+	color: $color_2;
+	display: block;
+	text-decoration: none;
+	padding: .5em 1em;
+	font-family: $font-family_5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	a {
+		color: $color_8;
+	}
+}
+section.alt {
+	background-color: $background-color_8;
+	color: $color_2;
+}
+.slide-in-left {
+	position: relative;
+	animation: slide-in-left 5s ease-out;
+}
+.slide-in-right {
+	position: relative;
+	animation: slide-in-right 5s ease-out;
+}
+.animate-char {
+	-webkit-animation: fadein 2s;
+	animation: fadein 3s;
+}
+.lista-productos {
+	background-color: $background-color_9;
+	padding: 3em;
+	.card {
+		background-color: $background-color_4;
+		border-radius: 10px;
+		padding: 1em;
+		box-shadow: 0 10px 5px #b2bec3;
+		text-align: center;
+		font-family: $font-family_6;
+	}
+}
+.card {
+	.title {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	img {
+		max-width: 100%;
+		border-radius: 5px;
+		transition: .5s ease;
+	}
+	.text {
+		text-align: left;
+		margin-left: 2em;
+		margin-bottom: .5em;
+		font-size: 12px;
+	}
+	&:hover {
+		img {
+			transform: scale(1.1);
+			transition: 1s ease;
+		}
+		.detalles {
+			opacity: 1;
+			visibility: visible;
+			top: 0;
+			transition: 2s ease;
+		}
+		.text {
+			opacity: 0;
+			transition: 1 ease;
+		}
+		.title {
+			opacity: 0;
+			transition: 1 ease;
+		}
+	}
+}
+.btn-comprar {
+	background-color: $background-color_10;
+	border: none;
+	padding: 1em;
+	border-radius: 5px;
+	font-weight: 700;
+	width: 100%;
+}
+.align-center {
+	text-align: center;
+}
+.text {
+	opacity: 1;
+	transition: .5s ease;
+}
+.title {
+	opacity: 1;
+	transition: .5s ease;
+}
+.new {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 5;
+	animation: pulse 2s ease-in infinite;
+}
+@media (min-width:40em) {
+	.caracteristica-head {
+		font-size: 50px;
+	}
+}
+@media (min-width:62em) {
+	.caracteristica-head {
+		margin-top: 7rem;
+	}
 }
